@@ -1,36 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Working with tables</title>
-    </head>
-    <body>
-       <form method="GET" action="">
-            <fieldset>
-            <label for="name">Name:</label>
-            <input id="name" type="text" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            </fieldset>
-            <br>
-            <label for="car">Car Plate Number:</label>
-            <input id="car" type="text" required pattern="[A-Z]{2}[0-9]{6}[A-Z]{2}" title="Sample: AA1234BB">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" required>
-            <br>
-            <select name="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
-            </select>
-            <br>
-            <textarea name="message" rows="10" cols="30" pattern="[A-Z]{2}[0-9]{6}[A-Z]{2}">
-            The cat was playing in the garden.
-            </textarea>
-            <br>
-            <input type="submit">
-       </form>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sample</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <label>
+                Message:
+                <input type="text" id="message"/>
+            </label>
+        </form>
+        <button id="btn-send">
+            Send
+        </button>
+    </div>
+    <script   src="//code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
